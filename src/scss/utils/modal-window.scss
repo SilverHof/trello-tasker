@@ -1,0 +1,62 @@
+@import "../config/variables";
+@import "../config/mixins";
+
+.modal-window {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100vw;
+
+   backdrop-filter: blur(5px);
+   &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      padding: 20px;
+      border-radius: 10px;
+      background-color: $dark-700-color;
+   }
+
+   &__title {
+      text-align: center;
+      font-size: 24px;
+      color: $white-color;
+   }
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+   }
+
+   &__yes-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 5px 20px;
+      border-radius: 5px;
+      background: $white-color;
+      color: $black-color;
+   }
+
+   &__no-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 5px 20px;
+      border-radius: 5px;
+      background: $red-color;
+      color: $white-color;
+   }
+}

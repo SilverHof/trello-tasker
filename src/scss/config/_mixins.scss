@@ -1,0 +1,18 @@
+@mixin text-button {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+@mixin icon-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: $dark-700-color;
+   padding: 5px;
+   border-radius: 5px;
+}

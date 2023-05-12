@@ -1,0 +1,80 @@
+@import "../config/variables";
+@import "../config/mixins";
+
+.footer {
+   height: 50px;
+   background-color: $dark-700-color;
+
+   &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      height: 100%;
+   }
+}
+
+.workflow-box {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   &__branch-icon {
+      color: $white-color;
+   }
+
+   &__button {
+      @include text-button;
+      background-color: $green-color;
+   }
+
+   &__button-text {
+      color: $white-color;
+      font-size: 14px;
+   }
+
+   &__button-icon {
+      padding-top: 3px;
+      height: 20px;
+   }
+
+}
+
+.buttons-box {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   &__button {
+      @include icon-button;
+
+      &:hover {
+         background-color: $dark-600-color;
+      }
+   }
+
+   &__button-icon {
+      display: block;
+
+      &_rotate {
+         animation-name: rotate;
+         animation-duration: 10s;
+         animation-iteration-count: infinite;
+         animation-timing-function: ease-in-out;
+      }
+   }
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   40% {
+      transform: rotate(360deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}

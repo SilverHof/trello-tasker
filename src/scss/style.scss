@@ -1,0 +1,28 @@
+// Common files
+@use "./config/nullstyle";
+@use "./config/fonts";
+@use "./config/mixins";
+@use "./config/variables";
+@use "./config/settings";
+
+
+// Header Block ----------------------------------
+@use "./utils/header.scss";
+// -----------------------------------------------
+
+
+// Main Block------------------------------------
+// @use "./utils/someblock.scss";
+@use "./utils/boards.scss";
+@use "./utils/board.scss";
+@use "./utils/modal-window.scss";
+@use "./utils/add-board-box.scss";
+@use "./utils/add-task-box.scss";
+@use "./utils/task-item.scss";
+// Main Block------------------------------------
+
+
+
+// Footer Block----------------------------------
+@use "./utils/footer.scss";
+// -----------------------------------------------

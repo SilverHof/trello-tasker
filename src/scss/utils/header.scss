@@ -1,0 +1,146 @@
+@import "../config/variables";
+@import "../config/mixins";
+
+.header {
+   height: 50px;
+   background-color: $dark-700-color;
+
+   &__inner {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      height: 100%;
+   }
+}
+
+.menu-button {
+   background-color: $dark-700-color;
+
+   &__image {
+      display: block;
+   }
+}
+
+.title-box {
+   display: flex;
+
+   &__left-part {
+      font-size: 20px;
+      font-weight: 600;
+
+      color: $white-color;
+   }
+
+   &__right-part {
+      font-size: 20px;
+      font-weight: 600;
+
+      color: $blue-color;
+   }
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   &__button {
+      @include text-button;
+      background-color: $dark-700-color;
+
+      &:hover {
+         background-color: $dark-600-color;
+      }
+   }
+
+   &__button-text {
+      color: $white-color;
+      font-size: 14px;
+   }
+
+   &__button-icon {
+      padding-top: 3px;
+      height: 20px;
+   }
+}
+
+.empty-box {
+   flex: 1;
+}
+
+.utils-box {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   
+   &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 5px;
+      border-radius: 5px;
+
+      background-color: $dark-700-color;
+
+      &:hover {
+         background-color: $dark-600-color;
+      }
+
+      &_add {
+         gap: 10px;
+         padding: 5px 10px;
+         border-radius: 5px;
+         background-color: $dark-600-color;
+
+         color: $white-color;
+         font-size: 14px;
+
+         &:hover {
+            background-color: $green-color;
+         }
+      }
+   }
+
+   &__button-image {
+      display: block;
+   }
+}
+
+.profile {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+
+   padding: 5px 8px;
+
+   border: 1px solid $white-color;
+   border-radius: 15px;
+
+
+   &__image {
+      display: block;
+
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+
+      background-color: #c50000;
+   }
+
+   &__name {
+      font-size: 14px;
+      color: $white-color;
+   }
+
+   &__more-button {
+      background-color: $dark-700-color;
+   }
+
+   &__more-button-image {
+      display: block;
+      color: $dark-700-color;
+      background-color: $dark-700-color;
+   }
+}

@@ -1,0 +1,97 @@
+@import "../config/variables";
+@import "../config/mixins";
+
+.task-item {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+
+   padding: 0px 5px;
+
+   border: 2px solid $blue-color;
+   border-radius: 5px;
+
+
+   &__field {
+      flex: 1;
+      position: relative;
+   }
+
+   &__title {
+      color: $white-color;
+   }
+
+   &__input {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: $dark-700-color;
+
+      color: $white-color;
+      font-size: 16px;
+   }
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      visibility: hidden;
+   }
+   
+   &__change-buttons {
+      position: relative;
+
+      width: 30px;
+      height: 30px;
+   }
+   
+   &__edit-button {
+      @include icon-button;
+
+   }
+
+   &__edit-button-image {
+      display: block;
+
+      width: 20px;
+      height: 20px;
+      
+   }
+
+   &__accept-button {
+      @include icon-button;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+
+   &__accept-button-image {
+      display: block;
+
+      width: 20px;
+      height: 20px;
+   }
+
+   &__delete-button {
+      @include icon-button;
+
+   }
+
+   &__delete-button-image {
+      display: block;
+
+      width: 20px;
+      height: 20px;
+   }
+}
+
+.task-item:hover .task-item__buttons {
+   visibility: visible;
+}

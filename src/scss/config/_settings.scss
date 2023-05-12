@@ -1,0 +1,57 @@
+@import './variables';
+
+body {
+    font-family: "Lexend";
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+    height: 100%;
+    padding: 20px 0px;
+
+    height: calc(100vh - 100px);
+    overflow-x: auto;
+    background-color: $dark-900-color;
+
+    &::-webkit-scrollbar {
+        width: 15px;
+        background-color: $dark-900-color;
+    }         
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        border: 5px solid $dark-900-color;
+        background-color: $blue-color;
+    } 
+    
+}
+
+.container {
+    height: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.disable {
+    visibility: hidden;
+}
+
+.is-dragging-task {
+    background-color: $blue-color;
+}
+
+.is-dragging-board {
+    background-color: $blue-color;
+}
+
+.selected {
+    transform: rotate(2deg);
+}
